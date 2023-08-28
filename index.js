@@ -285,6 +285,10 @@ app.get("/Halldetails/createing",(req,res)=>{
 
     res.json({NomberofSeatsAvailablewithRoomId:myData, RoomAmenitieswithRoomId:myData1, PricePerHourWithRoomId:myData2});
 })
+// set the endpoint
+app.get('/', (req,res)=>{
+    res.send(hallData);
+});
 
 // Booking a room with
 
